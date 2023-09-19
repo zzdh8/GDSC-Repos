@@ -1,4 +1,17 @@
+CREATE DATABASE example;
 use example;
+CREATE TABLE 고객(
+고객번호 varchar(255),
+이름 varchar(255),
+주소 varchar(255),
+primary key(고객번호)
+);
+CREATE TABLE 극장(
+극장번호 varchar(255),
+극장이름 varchar(255),
+극장위치 varchar(255),
+primary key(극장번호)
+);
 CREATE TABLE 예약(
 예약번호 varchar(255),
 극장번호 varchar(255),
@@ -15,7 +28,7 @@ INSERT INTO 고객(
 values('A','안준영','오류동'),('B','김동균','부평'),('C','최인호','일산');
 INSERT INTO 예약(
 예약번호,극장번호,고객번호)
-values('001','1','B'),('002','3','A'),('003','2','C');
+values('001','1','B'),('002','3','A'),('003',고객,'2','C');
 
 select * FROM 예약;
 
