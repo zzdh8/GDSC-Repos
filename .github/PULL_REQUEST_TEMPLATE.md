@@ -7,6 +7,7 @@
 - reservations : id, 극장번호(외래키), 고객번호(외래키), 날짜
 - reservation1.sql : theaters와 reservations를 RIGHT JOIN
 - reservation2.sql : customers와 reservations를 RIGHT JOIN
+- ERD : 테이블 사이의 관계를 표현
 
 ## Important content
 
