@@ -34,4 +34,14 @@ VALUES('123','1','a'),
 ('456','2','b'),
 ('789','3','c');
 
-SELECT * FROM 예약;
+SELECT * 
+FROM 예약
+LEFT JOIN 극장
+ON 예약.극장번호  = 극장.극장번호;
+
+SELECT * 
+FROM 예약
+LEFT JOIN 고객
+ON 예약.고객번호  = 고객.고객번호;
+
+
